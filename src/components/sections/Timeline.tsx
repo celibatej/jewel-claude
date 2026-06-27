@@ -47,9 +47,11 @@ export function Timeline({
               </span>
             </div>
 
-            <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              {item.summary}
-            </p>
+            {!showAchievements && (
+              <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+                {item.summary}
+              </p>
+            )}
 
             {showAchievements && (
               <ul className="mt-4 space-y-2">

@@ -12,15 +12,15 @@ import {
   Headset,
   Settings2,
   Truck,
-  Route,
-  ClipboardList,
   ShieldCheck,
-  BarChart3,
-  FileText,
-  Users2,
+  Handshake,
+  ClipboardCheck,
+  UsersRound,
+  MessagesSquare,
   Database,
-  Sparkles,
-  Search,
+  LineChart,
+  Languages,
+  TrendingUp,
 } from "lucide-react";
 
 /* ----------------------------- HERO / HOME ----------------------------- */
@@ -28,9 +28,9 @@ import {
 export const hero = {
   // A personal brand statement — confident, specific, not a cliché.
   statement:
-    "I keep operations running quietly and reliably — so teams ship faster, customers stay happy, and nothing falls through the cracks.",
+    "I keep operations running quietly and reliably — so teams move faster, customers stay heard, and nothing falls through the cracks.",
   intro:
-    "For more than 15 years — most of them in Saudi Arabia’s fast-moving remittance, car-rental and banking sectors — I have worked at the meeting point of operations, logistics and customer support. Now based in Chattogram, I bring that same discipline to teams remotely: accurate records, compliant processes, and customers who feel genuinely looked after.",
+    "For more than 15 years I have worked at the intersection of operations, logistics, and customer service — across financial services, fleet management, and remittance banking in the KSA market. My work is the kind people notice only when it is missing: fleets that stay coordinated, compliance records that hold up under audit, and customers who feel genuinely resolved rather than just closed. I bring that same reliability whether the role is in Riyadh, Chattogram, or fully remote.",
 };
 
 /* --------------------------- CAREER HIGHLIGHTS -------------------------- */
@@ -41,10 +41,10 @@ export type Stat = {
 };
 
 export const stats: Stat[] = [
-  { value: "15+", label: "Years of experience" },
-  { value: "KSA", label: "Market specialist" },
-  { value: "3", label: "Industries served" },
-  { value: "4", label: "Languages spoken" },
+  { value: "15+", label: "Years of Experience" },
+  { value: "KSA", label: "Primary Market" },
+  { value: "3", label: "Industries Served" },
+  { value: "4", label: "Languages Spoken" },
 ];
 
 /* -------------------------- PROFESSIONAL SUMMARY ------------------------ */
@@ -52,9 +52,9 @@ export const stats: Stat[] = [
 export const summary = {
   heading: "A steady hand for the work that holds a business together",
   paragraphs: [
-    "I specialise in the operational core of a company — supporting customers across channels, coordinating fleets and logistics, and keeping documentation, compliance and reporting in good order. The common thread is reliability: clear processes, careful records, and follow-through people can count on.",
-    "Much of my experience comes from regulated, high-volume environments. In remittance and banking I worked to strict KYC/AML standards and central-bank rules; in fleet operations I managed scheduling, maintenance and the full rental lifecycle for corporate clients. In every role, accuracy and trust were non-negotiable.",
-    "I also keep my toolkit current — CRM and ERP/Oracle systems to keep records clean, spreadsheets for reporting and analysis, and AI tools used responsibly to speed up routine writing, research and summarising without losing accuracy.",
+    "I specialise in the operational core of a business — the coordination, compliance, and communication work that keeps everything else moving. Over 15 years across financial services, automotive fleet management, and remittance banking in Saudi Arabia, I have built a track record of being the person teams rely on when accuracy and follow-through are non-negotiable.",
+    "My experience spans both customer-facing and back-office work. On the customer side, I have handled high volumes of complex enquiries — disputed transactions, delayed transfers, escalated complaints — and resolved them in ways that retain trust rather than just close tickets. On the operational side, I have managed fleet scheduling, vendor coordination, compliance documentation, and branch reporting across demanding, fast-moving environments.",
+    "More recently I have invested in formal upskilling — completing a Supply Chain Management Specialization from Rutgers University, Google AI Essentials, and an Inventory Management certification — to pair hands-on field experience with modern operational thinking. I am multilingual in English, Arabic, Bengali, and Hindi/Urdu, and comfortable working across diverse teams, time zones, and client bases.",
   ],
 };
 
@@ -62,30 +62,29 @@ export const summary = {
 
 export const about = {
   lead:
-    "I am Jobaedul Islam Jewel — an operations, logistics and customer support specialist. I spent more than 15 years in the Saudi Arabian market and now work with teams remotely from Chattogram, Bangladesh.",
+    "I am Jobaedul Islam Jewel — an operations, logistics, and customer service professional based in Chattogram, Bangladesh, with 15+ years of experience built almost entirely in the KSA market across Jeddah and Riyadh.",
   paragraphs: [
-    "My career has been built around a simple idea: a business runs well when its day-to-day operations are calm, organised and predictable. I have spent more than 15 years making that true — handling customer enquiries with patience, coordinating fleets and processing thousands of transactions, and keeping the paperwork behind it all accurate and audit-ready.",
-    "Much of that work was in Saudi Arabia, across three demanding industries. At a money-transfer company I processed international remittances under strict KYC/AML and central-bank compliance. At a car-rental firm I coordinated a large corporate fleet end to end. And in banking I supported customers and sales teams in a high-volume remittance environment. Each taught me how much reliable operations depend on getting the details right.",
-    "I work best where people and process meet. On the people side, I enjoy resolving issues properly the first time and turning a frustrating moment into a reason to stay. On the process side, I like mapping how work actually flows, removing the friction, and writing it down so the next person can do it without guesswork.",
-    "I work comfortably across languages and time zones — English, Bengali, Arabic and Hindi/Urdu — and I treat other people’s deadlines as seriously as my own. Lately I have been deepening my command of spreadsheets, ERP/CRM systems and AI productivity tools to do all of this faster and better.",
+    "My career has spanned three distinct industries: remittance banking, automotive fleet management, and financial services compliance. What connects them is the same underlying work — keeping records accurate, keeping customers calm, keeping processes tight, and flagging problems before they become crises. I have managed vehicle fleets, supervised driver teams, enforced KYC and AML protocols, resolved high-stakes transaction disputes, and prepared audit-ready documentation — often across all of these in a single working week.",
+    "I work best in roles where reliability is the standard, not the exception. I am the person who reads the SOP before asking questions, keeps the maintenance log updated without being reminded, and de-escalates a frustrated customer before they become a complaint on record. I am comfortable owning a process end-to-end and equally comfortable supporting a larger team where my contribution is one well-executed piece of a bigger operation.",
+    "I am currently based in Bangladesh and open to remote roles, contract engagements, and opportunities in the KSA market. I have recently completed formal certifications in supply chain management, AI tools, and inventory management — because I believe that experience without continued learning starts to quietly go stale.",
   ],
   // Short, human values rather than buzzwords.
   values: [
     {
       title: "Reliability first",
-      body: "If I commit to something, it gets done. Consistency is the whole point of operations work.",
+      body: "I treat other people’s deadlines as seriously as my own. If I commit to something, it gets done — without reminders and without shortcuts.",
     },
     {
-      title: "Clarity over noise",
-      body: "Clear notes, clean records and plain communication save everyone time later.",
+      title: "Accuracy over speed",
+      body: "Clean records, complete documentation, and careful data entry are not overhead — they are the job. I would rather take an extra ten minutes and get it right than create a problem for the audit two months later.",
     },
     {
-      title: "Care for the customer",
-      body: "Behind every ticket is a person. I solve the problem and protect the relationship.",
+      title: "Calm under pressure",
+      body: "Operational emergencies, difficult customers, and sudden process changes do not throw me. I have handled all three, usually at the same time, and the response is always the same: stay organised, communicate clearly, resolve first.",
     },
     {
-      title: "Compliance as a habit",
-      body: "Years in regulated remittance and banking taught me to keep work accurate and audit-ready by default.",
+      title: "Always improving",
+      body: "I look for the small fixes that quietly compound — a cleaner process, a faster tool, a clearer report format. And when a formal course will sharpen something I already do, I take it.",
     },
   ],
 };
@@ -175,62 +174,62 @@ export const highlights: Highlight[] = [
   {
     title: "Customer Service",
     icon: Headset,
-    body: "Resolving enquiries and disputes across phone, email and in person — de-escalating with patience and protecting the relationship while solving the problem.",
+    body: "Managing high volumes of customer enquiries across banking, remittance, and fleet rental — resolving disputes, retaining trust, and keeping CRM records complete and accurate.",
   },
   {
-    title: "Operations",
+    title: "Operations Coordination",
     icon: Settings2,
-    body: "Keeping day-to-day operations calm and predictable by spotting bottlenecks and tightening processes before they slow the team down.",
+    body: "Overseeing day-to-day branch and fleet operations across multiple roles — tracking workflows, flagging bottlenecks, and keeping everything aligned with head office SOPs.",
   },
   {
-    title: "Logistics",
+    title: "Logistics & Fleet Management",
     icon: Truck,
-    body: "Coordinating movements, vendors and timelines so work arrives on schedule and exceptions are caught and handled early.",
+    body: "Scheduling and tracking a large corporate vehicle fleet across Jeddah — maximising utilisation, coordinating maintenance, and dispatching drivers dynamically based on real-time demand.",
   },
   {
-    title: "Fleet Coordination",
-    icon: Route,
-    body: "Scheduling vehicle assignments, maintenance and driver dispatch so a corporate fleet stays available, efficient and fully documented.",
-  },
-  {
-    title: "Administration",
-    icon: ClipboardList,
-    body: "Running the administrative engine — bookings, agreements, correspondence and organised filing that keeps everything findable.",
-  },
-  {
-    title: "Compliance",
+    title: "KYC & AML Compliance",
     icon: ShieldCheck,
-    body: "Applying KYC/AML checks, identity verification and audit-ready documentation — the discipline regulated remittance and banking work demands.",
+    body: "Enforcing strict identity verification and transaction monitoring protocols in regulated remittance and banking environments, in full alignment with central bank requirements.",
   },
   {
-    title: "Reporting",
-    icon: BarChart3,
-    body: "Turning operational activity into clear audit and management reports that align with SOPs and support real decisions.",
+    title: "Vendor & Supplier Coordination",
+    icon: Handshake,
+    body: "Negotiating with external workshops and service providers, managing vendor documentation, and controlling operating costs across maintenance, insurance, and billing.",
   },
   {
-    title: "Documentation",
-    icon: FileText,
-    body: "Preparing accurate records, invoices and compliance paperwork that hold up to review and are easy for the next person to follow.",
+    title: "Documentation & Audit Readiness",
+    icon: ClipboardCheck,
+    body: "Maintaining complete, accurate records across compliance reports, rental agreements, insurance claims, and vehicle logs — always audit-ready and aligned with SOPs.",
   },
   {
-    title: "CRM",
-    icon: Users2,
-    body: "Maintaining clean customer records so history, context and next steps are always one click away for the whole team.",
+    title: "Driver & Team Supervision",
+    icon: UsersRound,
+    body: "Scheduling and managing shift rosters for driver teams, dispatching tasks based on location and urgency, and maintaining operational continuity during peak periods.",
   },
   {
-    title: "Data Entry",
+    title: "Dispute Resolution",
+    icon: MessagesSquare,
+    body: "De-escalating complex customer complaints — including delayed international transfers, transaction blocks, and billing disputes — using structured, calm resolution techniques.",
+  },
+  {
+    title: "Data Entry & Records Management",
     icon: Database,
-    body: "Fast, accurate data handling with the checks and discipline that keep high-volume records trustworthy over time.",
+    body: "Maintaining high-accuracy records across branch operations, fleet management systems, and customer databases — with careful attention to data integrity and audit trails.",
   },
   {
-    title: "AI Productivity",
-    icon: Sparkles,
-    body: "Using AI tools and prompting responsibly to speed up routine writing, summarising and research — without trading away accuracy.",
+    title: "Market Research & Competitor Analysis",
+    icon: LineChart,
+    body: "Collecting and analysing competitor pricing and service data in the remittance sector, delivering actionable insights to support management decisions and service positioning.",
   },
   {
-    title: "Market Research",
-    icon: Search,
-    body: "Gathering competitor and pricing data and organising it into clear summaries that sharpen commercial decisions.",
+    title: "Multilingual Client Communication",
+    icon: Languages,
+    body: "Communicating fluently with customers and colleagues in English, Arabic, Bengali, and Hindi/Urdu — bridging language gaps in diverse, multinational teams across the KSA market.",
+  },
+  {
+    title: "Process Improvement",
+    icon: TrendingUp,
+    body: "Identifying and flagging operational inefficiencies, contributing to workflow improvements that reduced friction, improved reporting accuracy, and kept teams aligned.",
   },
 ];
 
@@ -284,8 +283,8 @@ export const skillCategories: SkillCategory[] = [
     title: "Languages",
     skills: [
       "English — Fluent",
-      "Bengali — Native",
       "Arabic — Professional",
+      "Bengali — Native",
       "Hindi / Urdu — Fluent (spoken)",
     ],
   },
@@ -352,8 +351,8 @@ export const education: EducationItem[] = [
 
 export const languages: { language: string; level: string }[] = [
   { language: "English", level: "Fluent — read, write, speak" },
-  { language: "Bengali", level: "Native / bilingual" },
   { language: "Arabic", level: "Professional — read, write, speak" },
+  { language: "Bengali", level: "Native / bilingual" },
   { language: "Hindi / Urdu", level: "Fluent (spoken)" },
 ];
 

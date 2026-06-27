@@ -23,7 +23,7 @@ export default function HighlightsPage() {
       <PageHeader
         eyebrow="What I do"
         title="Professional highlights"
-        description="Rather than a portfolio of one-off projects, here is a clear map of where I consistently add value — the work I have done well, repeatedly, for years."
+        description="The areas where I consistently deliver the most value — built across three industries and 15 years of operations work."
       />
 
       <Section>

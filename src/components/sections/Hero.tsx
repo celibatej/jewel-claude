@@ -16,7 +16,7 @@ export function Hero() {
             <Reveal>
               <p className="eyebrow inline-flex items-center gap-2">
                 <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
-                {siteConfig.location} · {siteConfig.experienceYears} years
+                {siteConfig.location} · {siteConfig.experienceYears} years of experience
               </p>
             </Reveal>
 

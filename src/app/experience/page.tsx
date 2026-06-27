@@ -22,7 +22,7 @@ export default function ExperiencePage() {
       <PageHeader
         eyebrow="Career"
         title="Experience"
-        description="More than fifteen years across operations, logistics and customer support — presented as a clear, chronological timeline."
+        description="A look at where I have worked, what I was responsible for, and the environments I have operated in."
       />
 
       <Section>

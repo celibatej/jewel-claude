@@ -80,7 +80,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="What I do"
               title="Professional highlights"
-              description="The areas where I deliver the most value, built over fifteen years of operations and support work."
+              description="The areas where I consistently deliver the most value — built across three industries and 15 years of operations work."
             />
             <div className="hidden shrink-0 pb-2 sm:block">
               <ViewAll href="/highlights" label="All highlights" />
@@ -108,7 +108,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Career"
               title="Experience"
-              description="A look at where I have worked and the kind of responsibility I have carried."
+              description="A look at where I have worked, what I was responsible for, and the environments I have operated in."
             />
             <div className="hidden shrink-0 pb-2 sm:block">
               <ViewAll href="/experience" label="Full timeline" />
@@ -132,7 +132,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Toolkit"
               title="Skills"
-              description="Capabilities organised by the part of the business they support."
+              description="Capabilities built over 15 years — organised by the part of the business they support."
             />
             <div className="hidden shrink-0 pb-2 sm:block">
               <ViewAll href="/skills" label="All skills" />
@@ -160,7 +160,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Credentials"
               title="Certifications"
-              description="Formal training that backs up the day-to-day experience."
+              description="Formal training completed during my career break to sharpen and modernise what I already know from the field."
             />
             <div className="hidden shrink-0 pb-2 sm:block">
               <ViewAll href="/certifications" label="All certifications" />
@@ -183,7 +183,10 @@ export default function HomePage() {
 
       {/* Closing CTA */}
       <Section>
-        <CTA />
+        <CTA
+          title="Looking for someone who brings both field experience and fresh operational thinking?"
+          body="I am open to remote roles, KSA opportunities, and freelance engagements. Let’s talk."
+        />
       </Section>
     </>
   );

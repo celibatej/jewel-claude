@@ -8,8 +8,8 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 /**
- * Dynamically generated Open Graph / social preview image.
- * Produces a real PNG at request time — no static binary asset required.
+ * Dynamically generated Open Graph / social preview image, built around the
+ * JEWEL wordmark. Produces a real PNG at request time — no static asset.
  * Next.js automatically applies this to Open Graph and Twitter cards.
  */
 export default function OpengraphImage() {
@@ -28,37 +28,31 @@ export default function OpengraphImage() {
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-          <div
-            style={{
-              width: "56px",
-              height: "56px",
-              borderRadius: "14px",
-              backgroundColor: "#ffffff",
-              color: "#0b0e14",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "26px",
-              fontWeight: 700,
-            }}
-          >
-            JIJ
-          </div>
-          <span style={{ fontSize: "26px", color: "#98a2b3" }}>{siteConfig.location}</span>
+        {/* JEWEL wordmark */}
+        <div
+          style={{
+            fontSize: "40px",
+            fontWeight: 800,
+            letterSpacing: "16px",
+            color: "#ffffff",
+          }}
+        >
+          JEWEL
         </div>
 
+        {/* Identity */}
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: "76px", fontWeight: 700, letterSpacing: "-0.03em" }}>
+          <div style={{ fontSize: "74px", fontWeight: 700, letterSpacing: "-0.03em" }}>
             {siteConfig.name}
           </div>
-          <div style={{ fontSize: "40px", color: "#98a2b3", marginTop: "12px" }}>
+          <div style={{ fontSize: "38px", color: "#98a2b3", marginTop: "14px" }}>
             {siteConfig.title}
           </div>
         </div>
 
-        <div style={{ fontSize: "28px", color: "#667085" }}>
-          {siteConfig.experienceYears} years of experience
+        {/* Footer line */}
+        <div style={{ fontSize: "26px", color: "#667085" }}>
+          {siteConfig.location} · {siteConfig.experienceYears} years of experience
         </div>
       </div>
     ),

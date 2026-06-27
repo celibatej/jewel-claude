@@ -23,7 +23,7 @@ export default function SkillsPage() {
       <PageHeader
         eyebrow="Toolkit"
         title="Skills"
-        description="Organised by the part of the business they support, so it is easy to see where I fit on your team."
+        description="Capabilities built over 15 years — organised by the part of the business they support."
       />
 
       <Section>
