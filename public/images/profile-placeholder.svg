@@ -1,0 +1,16 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2f4f7" />
+      <stop offset="100%" stop-color="#e4e7ec" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)" />
+  <g fill="#98a2b3">
+    <circle cx="400" cy="400" r="135" />
+    <path d="M400 580c-150 0-272 104-290 240 -3 22 14 40 36 40h508c22 0 39-18 36-40 -18-136-140-240-290-240Z" />
+  </g>
+  <text x="400" y="930" text-anchor="middle" font-family="system-ui, sans-serif" font-size="30" fill="#667085">
+    Replace with your photo
+  </text>
+</svg>

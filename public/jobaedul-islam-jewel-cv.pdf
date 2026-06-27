@@ -1,0 +1,11 @@
+PLACEHOLDER — replace this file with your real CV.
+
+🔧 HOW TO REPLACE
+1. Export your CV as a PDF.
+2. Name it exactly: jobaedul-islam-jewel-cv.pdf
+3. Drop it into the /public folder, replacing this file.
+
+The "Download CV" buttons across the site link to /jobaedul-islam-jewel-cv.pdf,
+so once you replace this file the buttons will serve your real document.
+
+(If you prefer a different filename, update `resumeFile` in src/lib/site.ts.)

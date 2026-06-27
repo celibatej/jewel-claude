@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  ------------------------------------------------------------------
+  Design tokens — Apple-inspired minimalist palette.
+  Colors are expressed as raw HSL channels so Tailwind can apply
+  opacity modifiers (e.g. bg-background/80).
+  ------------------------------------------------------------------
+*/
+@layer base {
+  :root {
+    /* Light theme */
+    --background: 0 0% 100%;
+    --foreground: 220 14% 11%;
+
+    --muted: 220 16% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --subtle: 220 14% 98%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 11%;
+
+    --border: 220 13% 91%;
+
+    /* A restrained, confident blue used sparingly for emphasis */
+    --accent: 211 100% 50%;
+    --accent-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    /* Dark theme — deep, neutral, near-black like macOS */
+    --background: 220 18% 6%;
+    --foreground: 210 17% 95%;
+
+    --muted: 220 14% 13%;
+    --muted-foreground: 220 9% 64%;
+
+    --subtle: 220 16% 9%;
+
+    --card: 220 16% 9%;
+    --card-foreground: 210 17% 95%;
+
+    --border: 220 12% 18%;
+
+    --accent: 211 100% 60%;
+    --accent-foreground: 220 18% 6%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "cv11", "ss01";
+    font-variation-settings: "opsz" 32;
+  }
+
+  /* Respect users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Accessible focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-background;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-foreground;
+  }
+}
+
+@layer components {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Subtle hairline used to separate sections, Apple-style */
+  .hairline {
+    @apply border-t border-border;
+  }
+
+  /* Eyebrow / overline label */
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground;
+  }
+}
