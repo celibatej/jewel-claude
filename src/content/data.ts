@@ -42,7 +42,7 @@ export type Stat = {
 
 export const stats: Stat[] = [
   { value: "15+", label: "Years of Experience" },
-  { value: "KSA", label: "Primary Market" },
+  { value: "10K+", label: "Customer Interactions Handled" },
   { value: "3", label: "Industries Served" },
   { value: "4", label: "Languages Spoken" },
 ];

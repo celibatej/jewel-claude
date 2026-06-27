@@ -11,7 +11,7 @@ export function ProfileImage({ className, priority = false }: { className?: stri
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-3xl border border-border bg-muted",
+        "group relative overflow-hidden rounded-3xl border border-border bg-muted",
         className,
       )}
     >
@@ -21,7 +21,7 @@ export function ProfileImage({ className, priority = false }: { className?: stri
         fill
         priority={priority}
         sizes="(max-width: 768px) 80vw, 400px"
-        className="object-cover"
+        className="object-cover transition-transform duration-700 ease-apple group-hover:scale-[1.05]"
       />
     </div>
   );
