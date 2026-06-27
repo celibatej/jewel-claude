@@ -2,6 +2,7 @@ import Link from "next/link";
 import { navItems, siteConfig, socialLinks } from "@/lib/site";
 import { platformIcons } from "@/components/icons/BrandIcons";
 import { Container } from "@/components/ui/Container";
+import { Logo } from "@/components/ui/Logo";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -11,10 +12,8 @@ export function Footer() {
       <Container className="py-14">
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]">
           <div className="max-w-sm">
-            <p className="font-display text-base font-semibold tracking-tight">
-              {siteConfig.name}
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            <Logo className="h-7 w-auto" />
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               {siteConfig.title} · {siteConfig.location}. Operations, support and
               logistics handled with care.
             </p>

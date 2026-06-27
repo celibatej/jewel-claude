@@ -3,12 +3,6 @@
  * SITE CONFIGURATION
  * ------------------------------------------------------------------
  * Central place for identity, URLs, navigation and contact details.
- *
- * 🔧 PLACEHOLDERS TO REPLACE (search for the word "REPLACE"):
- *   - siteUrl        → your live domain
- *   - email          → your real professional email
- *   - social links   → your real profile URLs
- *   - resumeFile     → path to your CV PDF in /public
  * ------------------------------------------------------------------
  */
 
@@ -16,25 +10,24 @@ export const siteConfig = {
   name: "Jobaedul Islam Jewel",
   shortName: "Jewel",
   title: "Operations, Logistics & Customer Support Specialist",
-  // REPLACE with your live domain (no trailing slash).
-  url: "https://your-domain.com",
+  url: "https://jewel-claude.vercel.app",
   locale: "en_US",
-  location: "Bangladesh",
+  location: "Chattogram, Bangladesh",
+  address: "City Gate, Chattogram, Bangladesh",
   experienceYears: "15+",
 
   // A concise description used for SEO and previews.
   description:
-    "Jobaedul Islam Jewel is an Operations, Logistics & Customer Support Specialist with 15+ years of experience helping companies run smoother, support customers better, and keep documentation and compliance airtight.",
+    "Jobaedul Islam Jewel is an Operations, Logistics & Customer Support Specialist with 15+ years of experience across the Saudi Arabian market — in international remittance, fleet coordination and banking — now supporting teams remotely from Bangladesh.",
 
-  // REPLACE with your real professional email.
-  email: "hello@your-domain.com",
-  // REPLACE with your real phone number, or leave empty to hide.
-  phone: "",
+  email: "jobisjewel@gmail.com",
+  phone: "+880 1886 666 988",
 
-  // Placeholder assets — REPLACE the files in /public, keep the paths.
-  // The Open Graph / favicon images are generated automatically
-  // (see src/app/opengraph-image.tsx, icon.svg, apple-icon.tsx).
-  profileImage: "/images/profile-placeholder.svg",
+  // Assets live in /public. The Open Graph / favicon images are generated
+  // automatically (see src/app/opengraph-image.tsx, icon.svg, apple-icon.tsx).
+  profileImage: "/images/profile.jpg",
+  logoLight: "/images/logo-light.png", // light-coloured mark (used on dark UI)
+  logoDark: "/images/logo-dark.png", // dark-coloured mark (used on light UI)
   resumeFile: "/jobaedul-islam-jewel-cv.pdf",
 } as const;
 
@@ -68,15 +61,24 @@ export type SocialLink = {
     | "fiverr";
 };
 
-/**
- * Professional & freelance profiles.
- * REPLACE every "#" href with your real profile URL.
- */
+/** Professional & freelance profiles. */
 export const socialLinks: SocialLink[] = [
-  { label: "Email", href: "mailto:hello@your-domain.com", platform: "email" },
-  { label: "LinkedIn", href: "#", platform: "linkedin" },
-  { label: "GitHub", href: "#", platform: "github" },
-  { label: "Upwork", href: "#", platform: "upwork" },
-  { label: "Freelancer", href: "#", platform: "freelancer" },
-  { label: "Fiverr", href: "#", platform: "fiverr" },
+  { label: "Email", href: "mailto:jobisjewel@gmail.com", platform: "email" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/jobisjewel/",
+    platform: "linkedin",
+  },
+  { label: "GitHub", href: "https://github.com/celibatej", platform: "github" },
+  {
+    label: "Upwork",
+    href: "https://www.upwork.com/freelancers/~01d6529c54266e18d8",
+    platform: "upwork",
+  },
+  {
+    label: "Freelancer",
+    href: "https://www.freelancer.com/u/jobisjewel",
+    platform: "freelancer",
+  },
+  { label: "Fiverr", href: "https://www.fiverr.com/s/5rWYm06", platform: "fiverr" },
 ];

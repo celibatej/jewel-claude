@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, socialLinks } from "@/lib/site";
 
 /**
  * Builds page-level metadata with sensible defaults, Open Graph and Twitter
@@ -51,18 +51,25 @@ export function personJsonLd() {
     jobTitle: siteConfig.title,
     url: siteConfig.url,
     email: `mailto:${siteConfig.email}`,
+    telephone: siteConfig.phone,
     image: `${siteConfig.url}/opengraph-image`,
     address: {
       "@type": "PostalAddress",
-      addressCountry: siteConfig.location,
+      addressLocality: "Chattogram",
+      addressCountry: "BD",
     },
+    // Links the profile to verified social/freelance accounts.
+    sameAs: socialLinks
+      .filter((link) => link.href.startsWith("http"))
+      .map((link) => link.href),
+    knowsLanguage: ["English", "Bengali", "Arabic", "Hindi", "Urdu"],
     knowsAbout: [
       "Customer Service",
       "Operations",
       "Logistics",
       "Fleet Coordination",
       "Administration",
-      "Compliance",
+      "KYC & AML Compliance",
       "Reporting",
       "Documentation",
       "CRM",

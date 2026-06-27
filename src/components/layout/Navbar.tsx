@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { navItems, siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
+import { Logo } from "@/components/ui/Logo";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 export function Navbar() {
@@ -45,9 +46,10 @@ export function Navbar() {
         <nav className="flex h-16 items-center justify-between" aria-label="Primary">
           <Link
             href="/"
-            className="font-display text-base font-semibold tracking-tight"
+            aria-label={`${siteConfig.name} — home`}
+            className="flex items-center"
           >
-            {siteConfig.name}
+            <Logo className="h-[22px] w-auto sm:h-6" />
           </Link>
 
           {/* Desktop links */}

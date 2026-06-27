@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 
 import { contact } from "@/content/data";
 import { siteConfig, socialLinks } from "@/lib/site";
@@ -31,15 +31,32 @@ export default function ContactPage() {
             <Reveal className="space-y-8">
               <div>
                 <p className="eyebrow mb-4">Direct</p>
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="group inline-flex items-center gap-3 text-lg font-medium transition-colors hover:text-accent"
-                >
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-muted">
-                    <Mail className="h-5 w-5" aria-hidden="true" />
-                  </span>
-                  {siteConfig.email}
-                </a>
+                <div className="space-y-3">
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="group flex items-center gap-3 text-lg font-medium transition-colors hover:text-accent"
+                  >
+                    <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-muted">
+                      <Mail className="h-5 w-5" aria-hidden="true" />
+                    </span>
+                    {siteConfig.email}
+                  </a>
+                  <a
+                    href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+                    className="group flex items-center gap-3 text-lg font-medium transition-colors hover:text-accent"
+                  >
+                    <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-muted">
+                      <Phone className="h-5 w-5" aria-hidden="true" />
+                    </span>
+                    {siteConfig.phone}
+                  </a>
+                  <p className="flex items-center gap-3 text-lg font-medium">
+                    <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-muted">
+                      <MapPin className="h-5 w-5" aria-hidden="true" />
+                    </span>
+                    {siteConfig.address}
+                  </p>
+                </div>
               </div>
 
               <div>
