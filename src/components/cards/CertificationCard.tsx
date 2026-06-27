@@ -1,6 +1,7 @@
 import { Award } from "lucide-react";
 import type { Certification } from "@/content/data";
 import { cn } from "@/lib/utils";
+import { SpotlightCard } from "@/components/ui/SpotlightCard";
 
 /** Card describing a single certification. */
 export function CertificationCard({
@@ -11,14 +12,14 @@ export function CertificationCard({
   className?: string;
 }) {
   return (
-    <div
+    <SpotlightCard
       className={cn(
-        "flex h-full flex-col rounded-3xl border border-border bg-card p-6 sm:p-7",
+        "group rounded-3xl border border-border bg-card p-6 transition-all duration-300 ease-apple hover:-translate-y-1 hover:border-foreground/20 hover:shadow-xl hover:shadow-foreground/5 sm:p-7",
         className,
       )}
     >
       <div className="flex items-start justify-between gap-4">
-        <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-muted text-foreground">
+        <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-muted text-foreground transition-colors duration-300 group-hover:bg-foreground group-hover:text-background">
           <Award className="h-5 w-5" aria-hidden="true" />
         </span>
         <span className="text-sm font-medium text-muted-foreground">{item.year}</span>
@@ -30,6 +31,6 @@ export function CertificationCard({
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
         {item.description}
       </p>
-    </div>
+    </SpotlightCard>
   );
 }

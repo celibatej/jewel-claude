@@ -14,7 +14,7 @@ export function PageHeader({
   return (
     <section className="pt-16 sm:pt-20">
       <Container>
-        <Reveal className="max-w-3xl">
+        <Reveal blur className="max-w-3xl">
           <p className="eyebrow mb-4">{eyebrow}</p>
           <h1 className="font-display text-4xl font-semibold tracking-tightest text-balance sm:text-5xl">
             {title}

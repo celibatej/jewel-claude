@@ -19,6 +19,7 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <Reveal
+      blur
       className={cn(
         "max-w-2xl",
         align === "center" && "mx-auto text-center",

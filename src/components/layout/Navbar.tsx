@@ -15,6 +15,7 @@ export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hovered, setHovered] = useState<string | null>(null);
   const reduceMotion = useReducedMotion();
 
   // Subtle elevation once the user scrolls past the top.
@@ -53,23 +54,59 @@ export function Navbar() {
           </Link>
 
           {/* Desktop links */}
-          <ul className="hidden items-center gap-1 lg:flex">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  aria-current={isActive(item.href) ? "page" : undefined}
-                  className={cn(
-                    "rounded-full px-3.5 py-2 text-sm transition-colors duration-200",
-                    isActive(item.href)
-                      ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground",
-                  )}
+          <ul
+            className="hidden items-center gap-1 lg:flex"
+            onMouseLeave={() => setHovered(null)}
+          >
+            {navItems.map((item) => {
+              const active = isActive(item.href);
+              return (
+                <li
+                  key={item.href}
+                  className="relative"
+                  onMouseEnter={() => setHovered(item.href)}
                 >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+                  {/* Soft pill that glides to the hovered tab */}
+                  {hovered === item.href && (
+                    <motion.span
+                      layoutId="nav-hover-pill"
+                      aria-hidden="true"
+                      className="absolute inset-0 rounded-full bg-muted"
+                      transition={
+                        reduceMotion
+                          ? { duration: 0 }
+                          : { type: "spring", stiffness: 450, damping: 35 }
+                      }
+                    />
+                  )}
+                  <Link
+                    href={item.href}
+                    aria-current={active ? "page" : undefined}
+                    className={cn(
+                      "relative z-10 inline-flex items-center rounded-full px-3.5 py-2 text-sm transition-colors duration-200",
+                      active
+                        ? "text-foreground"
+                        : "text-muted-foreground hover:text-foreground",
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                  {/* Sliding underline marking the active page */}
+                  {active && (
+                    <motion.span
+                      layoutId="nav-active-underline"
+                      aria-hidden="true"
+                      className="absolute -bottom-px left-3.5 right-3.5 h-0.5 rounded-full bg-foreground"
+                      transition={
+                        reduceMotion
+                          ? { duration: 0 }
+                          : { type: "spring", stiffness: 450, damping: 35 }
+                      }
+                    />
+                  )}
+                </li>
+              );
+            })}
           </ul>
 
           <div className="flex items-center gap-2">

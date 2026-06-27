@@ -1,6 +1,7 @@
 import { stats } from "@/content/data";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/motion/Reveal";
+import { CountUp } from "@/components/motion/CountUp";
 
 /** Career highlights presented as a row of quiet, confident proof points. */
 export function Stats() {
@@ -16,7 +17,7 @@ export function Stats() {
           >
             <dt className="sr-only">{stat.label}</dt>
             <dd className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-              {stat.value}
+              <CountUp value={stat.value} />
             </dd>
             <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
           </Reveal>

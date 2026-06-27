@@ -20,7 +20,7 @@ export function Hero() {
               </p>
             </Reveal>
 
-            <Reveal delay={0.05}>
+            <Reveal delay={0.05} blur>
               <h1 className="mt-5 font-display text-4xl font-semibold tracking-tightest text-balance sm:text-5xl lg:text-6xl">
                 {siteConfig.name}
               </h1>
