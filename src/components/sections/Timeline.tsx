@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MapPin } from "lucide-react";
 import type { ExperienceItem } from "@/content/data";
 import { Reveal } from "@/components/motion/Reveal";
@@ -51,13 +50,12 @@ export function Timeline({
                       className="group inline-flex items-center gap-2 font-medium text-foreground/80 transition-colors hover:text-foreground"
                     >
                       {item.companyLogo && (
-                        <span className="relative inline-flex h-5 w-5 shrink-0 overflow-hidden rounded bg-white ring-1 ring-border">
-                          <Image
+                        <span className="inline-flex items-center rounded-md bg-white px-2 py-1 ring-1 ring-black/10">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
                             src={item.companyLogo}
                             alt=""
-                            fill
-                            sizes="20px"
-                            className="object-contain p-0.5"
+                            className="h-5 w-auto object-contain"
                           />
                         </span>
                       )}
