@@ -14,8 +14,7 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo className="h-7 w-auto" />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.title} · {siteConfig.location}. Operations, support and
-              logistics handled with care.
+              {siteConfig.title} · Reliable. Compliant. Always follow-through.
             </p>
           </div>
 
