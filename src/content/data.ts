@@ -94,6 +94,8 @@ export const about = {
 export type ExperienceItem = {
   role: string;
   company: string;
+  companyUrl?: string;
+  companyLogo?: string;
   period: string;
   location: string;
   summary: string;
@@ -113,6 +115,8 @@ export const experience: ExperienceItem[] = [
   {
     role: "Customer Service Executive",
     company: "ERSAL Money Transfer",
+    companyUrl: "https://ersal.sa/",
+    companyLogo: "/images/ersal.png",
     period: "2017 – 2023",
     location: "Riyadh, KSA",
     summary:
@@ -129,6 +133,8 @@ export const experience: ExperienceItem[] = [
   {
     role: "Customer Service Representative / Fleet Coordinator",
     company: "Best Rent a Car",
+    companyUrl: "https://bestrentacar.com.sa/",
+    companyLogo: "/images/best-rent-a-car.png",
     period: "2014 – 2017",
     location: "Jeddah, KSA",
     summary:
@@ -145,6 +151,8 @@ export const experience: ExperienceItem[] = [
   {
     role: "Customer Service Representative",
     company: "Arab National Bank – TeleMoney",
+    companyUrl: "https://anb.com.sa/web/anb/telemoney",
+    companyLogo: "/images/telemoney.jpg",
     period: "2009 – 2012",
     location: "Jeddah, KSA",
     summary:
@@ -159,6 +167,8 @@ export const experience: ExperienceItem[] = [
   {
     role: "Sales & Marketing Representative",
     company: "Arab National Bank – TeleMoney",
+    companyUrl: "https://anb.com.sa/web/anb/telemoney",
+    companyLogo: "/images/telemoney.jpg",
     period: "2007 – 2009",
     location: "Jeddah, KSA",
     summary:

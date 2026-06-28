@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MapPin } from "lucide-react";
 import type { ExperienceItem } from "@/content/data";
 import { Reveal } from "@/components/motion/Reveal";
@@ -41,9 +42,32 @@ export function Timeline({
 
             {(item.company || item.location) && (
               <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
-                {item.company && (
-                  <span className="font-medium text-foreground/80">{item.company}</span>
-                )}
+                {item.company &&
+                  (item.companyUrl ? (
+                    <a
+                      href={item.companyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group inline-flex items-center gap-2 font-medium text-foreground/80 transition-colors hover:text-foreground"
+                    >
+                      {item.companyLogo && (
+                        <span className="relative inline-flex h-5 w-5 shrink-0 overflow-hidden rounded bg-white ring-1 ring-border">
+                          <Image
+                            src={item.companyLogo}
+                            alt=""
+                            fill
+                            sizes="20px"
+                            className="object-contain p-0.5"
+                          />
+                        </span>
+                      )}
+                      <span className="underline-offset-4 group-hover:underline">
+                        {item.company}
+                      </span>
+                    </a>
+                  ) : (
+                    <span className="font-medium text-foreground/80">{item.company}</span>
+                  ))}
                 {item.location && (
                   <span className="inline-flex items-center gap-1">
                     <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
