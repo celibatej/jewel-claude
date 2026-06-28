@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Eye, X } from "lucide-react";
 
@@ -62,30 +61,21 @@ export function CertificateViewer({ src, title }: { src: string; title: string }
             </button>
 
             <motion.figure
-              className="flex max-h-full w-full max-w-[1400px] flex-col items-center gap-4"
+              className="flex max-h-full flex-col items-center gap-4"
               initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={shouldReduceMotion ? undefined : { opacity: 0, scale: 0.96 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
             >
-              <a
-                href={src}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Open ${title} certificate at full size`}
-                className="group relative block h-[80vh] w-full"
-              >
-                <Image
-                  src={src}
-                  alt={`${title} certificate`}
-                  fill
-                  quality={95}
-                  priority
-                  sizes="(max-width: 1400px) 92vw, 1400px"
-                  className="rounded-xl object-contain shadow-2xl"
-                />
-              </a>
+              {/* Plain img: shows the certificate as large as the viewport allows,
+                  preserving aspect ratio with no letterboxing. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={src}
+                alt={`${title} certificate`}
+                className="max-h-[84vh] max-w-[95vw] rounded-xl object-contain shadow-2xl"
+              />
               <figcaption className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
                 <span className="text-muted-foreground">{title}</span>
                 <a
