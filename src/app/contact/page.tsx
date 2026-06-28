@@ -89,7 +89,7 @@ export default function ContactPage() {
                     })}
                 </ul>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  Based in {siteConfig.location}, available for remote work across time zones.
+                  Open to on-site, hybrid, and remote opportunities across KSA, Bangladesh, and beyond.
                 </p>
               </div>
             </Reveal>
