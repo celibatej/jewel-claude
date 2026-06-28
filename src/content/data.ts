@@ -260,6 +260,8 @@ export const skillCategories: SkillCategory[] = [
       "Time Management",
       "Lead Generation",
       "Market Research",
+      "Team Coordination",
+      "Problem Solving",
     ],
   },
   {
