@@ -62,11 +62,11 @@ export const summary = {
 
 export const about = {
   lead:
-    "I am Jobaedul Islam Jewel — an operations, logistics, and customer service professional based in Chattogram, Bangladesh, with 15+ years of experience built almost entirely in the KSA market across Jeddah and Riyadh.",
+    "I am Jobaedul Islam Jewel — an operations, logistics, and customer service professional with 15+ years of experience built almost entirely in the KSA market across Jeddah and Riyadh.",
   paragraphs: [
     "My career has spanned three distinct industries: remittance banking, automotive fleet management, and financial services compliance. What connects them is the same underlying work — keeping records accurate, keeping customers calm, keeping processes tight, and flagging problems before they become crises. I have managed vehicle fleets, supervised driver teams, enforced KYC and AML protocols, resolved high-stakes transaction disputes, and prepared audit-ready documentation — often across all of these in a single working week.",
     "I work best in roles where reliability is the standard, not the exception. I am the person who reads the SOP before asking questions, keeps the maintenance log updated without being reminded, and de-escalates a frustrated customer before they become a complaint on record. I am comfortable owning a process end-to-end and equally comfortable supporting a larger team where my contribution is one well-executed piece of a bigger operation.",
-    "I am currently based in Bangladesh and open to remote roles, contract engagements, and opportunities in the KSA market. I have recently completed formal certifications in supply chain management, AI tools, and inventory management — because I believe that experience without continued learning starts to quietly go stale.",
+    "I am open to roles across the KSA market and beyond. I have recently completed formal certifications in supply chain management, AI tools, and inventory management — because I believe that experience without continued learning starts to quietly go stale.",
   ],
   // Short, human values rather than buzzwords.
   values: [
