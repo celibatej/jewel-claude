@@ -69,7 +69,6 @@ export const socialLinks: SocialLink[] = [
     href: "https://www.linkedin.com/in/jobisjewel/",
     platform: "linkedin",
   },
-  { label: "GitHub", href: "https://github.com/celibatej", platform: "github" },
   {
     label: "Upwork",
     href: "https://www.upwork.com/freelancers/~01d6529c54266e18d8",
