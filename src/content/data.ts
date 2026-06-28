@@ -308,6 +308,7 @@ export type Certification = {
   issuer: string;
   year: string;
   description: string;
+  image: string;
 };
 
 export const certifications: Certification[] = [
@@ -317,6 +318,7 @@ export const certifications: Certification[] = [
     year: "2026",
     description:
       "Core focus on logistics networks, procurement strategies, inventory management models and global supply chain operations.",
+    image: "/images/supply-chain-management.jpg",
   },
   {
     title: "Google AI Essentials Specialization",
@@ -324,6 +326,7 @@ export const certifications: Certification[] = [
     year: "Nov 2025",
     description:
       "Foundational AI applications, prompt engineering techniques and responsible use of AI tools to maximise productivity and streamline workflows.",
+    image: "/images/google-ai-essentials.jpg",
   },
   {
     title: "Inventory Management Certification",
@@ -331,6 +334,7 @@ export const certifications: Certification[] = [
     year: "Dec 2025",
     description:
       "Specialised knowledge in inventory tracking, stock optimisation, lead-time management and minimising supply chain waste.",
+    image: "/images/inventory-management.jpg",
   },
 ];
 

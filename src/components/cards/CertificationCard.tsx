@@ -2,6 +2,7 @@ import { Award } from "lucide-react";
 import type { Certification } from "@/content/data";
 import { cn } from "@/lib/utils";
 import { SpotlightCard } from "@/components/ui/SpotlightCard";
+import { CertificateViewer } from "@/components/cards/CertificateViewer";
 
 /** Card describing a single certification. */
 export function CertificationCard({
@@ -31,6 +32,9 @@ export function CertificationCard({
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
         {item.description}
       </p>
+      <div className="mt-auto">
+        <CertificateViewer src={item.image} title={item.title} />
+      </div>
     </SpotlightCard>
   );
 }
