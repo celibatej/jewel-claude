@@ -10,7 +10,7 @@ export const siteConfig = {
   name: "Jobaedul Islam Jewel",
   shortName: "Jewel",
   title: "Operations, Logistics & Customer Support Specialist",
-  url: "https://jewel-claude.vercel.app",
+  url: "https://jobisjewel.vercel.app",
   locale: "en_US",
   location: "Chattogram, Bangladesh",
   address: "City Gate, Chattogram, Bangladesh",
