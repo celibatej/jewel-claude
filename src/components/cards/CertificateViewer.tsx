@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Eye, X } from "lucide-react";
+import { ArrowUpRight, Eye, X } from "lucide-react";
 
 /**
  * "View Certificate" button that opens the certificate image in an accessible
@@ -62,24 +62,41 @@ export function CertificateViewer({ src, title }: { src: string; title: string }
             </button>
 
             <motion.figure
-              className="flex max-h-full w-full max-w-4xl flex-col items-center gap-4"
+              className="flex max-h-full w-full max-w-[1400px] flex-col items-center gap-4"
               initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={shouldReduceMotion ? undefined : { opacity: 0, scale: 0.96 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative h-[78vh] w-full">
+              <a
+                href={src}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Open ${title} certificate at full size`}
+                className="group relative block h-[80vh] w-full"
+              >
                 <Image
                   src={src}
                   alt={`${title} certificate`}
                   fill
-                  sizes="(max-width: 896px) 92vw, 896px"
-                  className="rounded-2xl border border-border object-contain shadow-2xl"
+                  quality={95}
+                  priority
+                  sizes="(max-width: 1400px) 92vw, 1400px"
+                  className="rounded-xl object-contain shadow-2xl"
                 />
-              </div>
-              <figcaption className="text-center text-sm text-muted-foreground">
-                {title}
+              </a>
+              <figcaption className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
+                <span className="text-muted-foreground">{title}</span>
+                <a
+                  href={src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-medium text-foreground transition-colors hover:text-accent"
+                >
+                  Open full size
+                  <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                </a>
               </figcaption>
             </motion.figure>
           </motion.div>
