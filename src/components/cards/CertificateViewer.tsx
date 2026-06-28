@@ -5,9 +5,10 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Eye, X } from "lucide-react";
 
 /**
- * "View Certificate" button that opens the certificate image in an accessible
- * lightbox (dim, blurred backdrop). Closes on Escape, backdrop click, or the
- * close button. Body scroll is locked while open. Respects reduced motion.
+ * "View Certificate" button that opens the certificate in a full-screen
+ * viewer. The entire certificate is shown, scaled to fit the page (never
+ * cropped or zoomed). Close via the top-right button, a backdrop click, or
+ * Escape. Body scroll is locked while open; respects reduced motion.
  */
 export function CertificateViewer({ src, title }: { src: string; title: string }) {
   const [open, setOpen] = useState(false);
@@ -44,51 +45,51 @@ export function CertificateViewer({ src, title }: { src: string; title: string }
             role="dialog"
             aria-modal="true"
             aria-label={`${title} — certificate`}
-            className="fixed inset-0 z-[90] flex items-center justify-center bg-background/85 p-4 backdrop-blur-md sm:p-8"
+            className="fixed inset-0 z-[90] bg-black/90 backdrop-blur-sm"
             initial={shouldReduceMotion ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={shouldReduceMotion ? undefined : { opacity: 0 }}
             transition={{ duration: 0.25 }}
             onClick={() => setOpen(false)}
           >
-            <button
-              type="button"
-              aria-label="Close certificate"
-              onClick={() => setOpen(false)}
-              className="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card text-foreground transition-colors hover:bg-muted"
-            >
-              <X className="h-5 w-5" aria-hidden="true" />
-            </button>
+            {/* Top bar: title + open in new tab + close */}
+            <div className="absolute inset-x-0 top-0 z-10 flex items-center justify-between gap-4 p-4">
+              <a
+                href={src}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur transition-colors hover:bg-white/20"
+              >
+                Open in new tab
+                <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </a>
+              <button
+                type="button"
+                aria-label="Close certificate"
+                onClick={() => setOpen(false)}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur transition-colors hover:bg-white/20"
+              >
+                <X className="h-5 w-5" aria-hidden="true" />
+              </button>
+            </div>
 
-            <motion.figure
-              className="flex max-h-full flex-col items-center gap-4"
-              initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.96 }}
+            {/* Full certificate, fit to the page */}
+            <motion.div
+              className="flex h-full w-full items-center justify-center p-4 pt-20 sm:p-10 sm:pt-20"
+              initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={shouldReduceMotion ? undefined : { opacity: 0, scale: 0.96 }}
+              exit={shouldReduceMotion ? undefined : { opacity: 0, scale: 0.98 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              onClick={(e) => e.stopPropagation()}
             >
-              {/* Plain img: shows the certificate as large as the viewport allows,
-                  preserving aspect ratio with no letterboxing. */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={src}
                 alt={`${title} certificate`}
-                className="max-h-[84vh] max-w-[95vw] rounded-xl object-contain shadow-2xl"
+                onClick={(e) => e.stopPropagation()}
+                className="max-h-full max-w-full rounded-lg object-contain shadow-2xl"
               />
-              <figcaption className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm">
-                <span className="text-muted-foreground">{title}</span>
-                <a
-                  href={src}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 font-medium text-foreground transition-colors hover:text-accent"
-                >
-                  Open full size
-                  <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </a>
-              </figcaption>
-            </motion.figure>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
