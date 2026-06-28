@@ -28,9 +28,9 @@ import {
 export const hero = {
   // A personal brand statement — confident, specific, not a cliché.
   statement:
-    "I keep operations running quietly and reliably — so teams move faster, customers stay heard, and nothing falls through the cracks.",
+    "I keep operations running quietly and reliably — so teams stay coordinated, customers stay heard, and nothing falls through the cracks.",
   intro:
-    "For more than 15 years I have worked at the intersection of operations, logistics, and customer service — across financial services, fleet management, and remittance banking in the KSA market. My work is the kind people notice only when it is missing: fleets that stay coordinated, compliance records that hold up under audit, and customers who feel genuinely resolved rather than just closed. I bring that same reliability whether the role is in Riyadh, Chattogram, or fully remote.",
+    "For more than 15 years I have worked at the intersection of operations, logistics, and customer service — across financial services, fleet management, and remittance banking in the KSA market. My work is the kind people notice only when it is missing: fleets that stay coordinated, compliance records that hold up under audit, and customers who feel genuinely resolved rather than just closed. I bring that same reliability whether the role is based in the KSA market, Bangladesh, or fully remote.",
 };
 
 /* --------------------------- CAREER HIGHLIGHTS -------------------------- */
