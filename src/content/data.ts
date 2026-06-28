@@ -102,6 +102,15 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
+    role: "Career Break & Professional Development",
+    company: "",
+    period: "2023 – Present",
+    location: "",
+    summary:
+      "Took a planned career break while actively upskilling. Completed certifications in Supply Chain Management (Rutgers University), Google AI Essentials, and Inventory Management (HP LIFE). Now actively pursuing full-time opportunities across operations, logistics, customer service, and administration.",
+    achievements: [],
+  },
+  {
     role: "Customer Service Executive",
     company: "ERSAL Money Transfer",
     period: "2017 – 2023",

@@ -39,21 +39,27 @@ export function Timeline({
               </span>
             </div>
 
-            <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
-              <span className="font-medium text-foreground/80">{item.company}</span>
-              <span className="inline-flex items-center gap-1">
-                <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
-                {item.location}
-              </span>
-            </div>
+            {(item.company || item.location) && (
+              <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
+                {item.company && (
+                  <span className="font-medium text-foreground/80">{item.company}</span>
+                )}
+                {item.location && (
+                  <span className="inline-flex items-center gap-1">
+                    <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
+                    {item.location}
+                  </span>
+                )}
+              </div>
+            )}
 
-            {!showAchievements && (
+            {(!showAchievements || item.achievements.length === 0) && (
               <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
                 {item.summary}
               </p>
             )}
 
-            {showAchievements && (
+            {showAchievements && item.achievements.length > 0 && (
               <ul className="mt-4 space-y-2">
                 {item.achievements.map((achievement) => (
                   <li
