@@ -2,7 +2,6 @@ import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/site";
 
 // Route segment config
-export const runtime = "edge";
 export const alt = `${siteConfig.name} — ${siteConfig.title}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -31,6 +30,7 @@ export default function OpengraphImage() {
         {/* JEWEL wordmark */}
         <div
           style={{
+            display: "flex",
             fontSize: "40px",
             fontWeight: 800,
             letterSpacing: "16px",
@@ -42,17 +42,17 @@ export default function OpengraphImage() {
 
         {/* Identity */}
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: "74px", fontWeight: 700, letterSpacing: "-0.03em" }}>
+          <div style={{ display: "flex", fontSize: "74px", fontWeight: 700, letterSpacing: "-0.03em" }}>
             {siteConfig.name}
           </div>
-          <div style={{ fontSize: "38px", color: "#98a2b3", marginTop: "14px" }}>
+          <div style={{ display: "flex", fontSize: "38px", color: "#98a2b3", marginTop: "14px" }}>
             {siteConfig.title}
           </div>
         </div>
 
         {/* Footer line */}
-        <div style={{ fontSize: "26px", color: "#667085" }}>
-          {siteConfig.location} · {siteConfig.experienceYears} years of experience
+        <div style={{ display: "flex", fontSize: "26px", color: "#667085" }}>
+          {`${siteConfig.location} · ${siteConfig.experienceYears} years of experience`}
         </div>
       </div>
     ),

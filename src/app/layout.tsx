@@ -66,7 +66,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${interDisplay.variable}`}>
-      <body className="min-h-dvh antialiased">
+      <body suppressHydrationWarning className="min-h-dvh antialiased">
         <JsonLd data={personJsonLd()} />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <ScrollProgress />
