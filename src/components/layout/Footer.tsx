@@ -59,9 +59,14 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground sm:flex-row sm:items-center">
-          <p>
-            © {year} {siteConfig.name}. All rights reserved.
-          </p>
+          <div className="space-y-1">
+            <p id="footer-copyright">
+              © {year} {siteConfig.name}. All rights reserved.
+            </p>
+            <p id="footer-attribution">
+              Designed and built by Jobaedul Islam Jewel
+            </p>
+          </div>
           <Link href="/privacy" className="transition-colors hover:text-foreground">
             Privacy Policy
           </Link>
