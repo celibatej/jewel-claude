@@ -104,20 +104,11 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Career Break & Professional Development",
-    company: "",
-    period: "2023 – Present",
-    location: "",
-    summary:
-      "Took a planned career break while actively upskilling. Completed certifications in Supply Chain Management (Rutgers University), Google AI Essentials, and Inventory Management (HP LIFE). Now actively pursuing full-time opportunities across operations, logistics, customer service, and administration.",
-    achievements: [],
-  },
-  {
     role: "Customer Service Executive",
     company: "ERSAL Money Transfer",
     companyUrl: "https://ersal.sa/",
     companyLogo: "/images/ersal.png",
-    period: "2017 – 2023",
+    period: "2017 – Present",
     location: "Riyadh, KSA",
     summary:
       "Processed high-volume international remittances under strict KYC/AML and central-bank compliance, while supporting branch cash operations and audit reporting.",
@@ -146,6 +137,20 @@ export const experience: ExperienceItem[] = [
       "Handled the full rental lifecycle — bookings, agreements, payments, return inspections and damage reporting — maintaining accurate records throughout.",
       "Negotiated pricing with external vendors and managed insurance claims, registrations and billing invoices to control operating costs.",
       "Coordinated directly with corporate clients to manage account requirements, resolve service issues and sustain long-term rental agreements.",
+    ],
+  },
+  {
+    role: "Executive Assistant",
+    company: "FAYEZ ALI RAJAB TRADING EST",
+    period: "2013 – 2014",
+    location: "Jeddah, KSA",
+    summary:
+      "Managed executive scheduling, travel arrangements, correspondence, purchase orders, and front-desk reception while maintaining confidential physical and digital records.",
+    achievements: [
+      "Managed calendar, scheduling, and appointments, and coordinated travel arrangements including flight and hotel bookings.",
+      "Prepared purchase orders and liaised with the sales team and other departments.",
+      "Answered and transferred incoming calls to relevant departments, and managed correspondence including emails, letters, and memos, while maintaining confidentiality.",
+      "Maintained physical and digital filing systems and served as front-desk point of contact for visitors and clients.",
     ],
   },
   {
