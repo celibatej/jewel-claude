@@ -57,8 +57,8 @@ export function Button(props: ButtonProps) {
         <a
           href={href}
           className={classes}
-          target={href.startsWith("http") ? "_blank" : undefined}
-          rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+          target={external || href.startsWith("http") ? "_blank" : undefined}
+          rel={external || href.startsWith("http") ? "noopener noreferrer" : undefined}
           {...rest}
         >
           {children}
