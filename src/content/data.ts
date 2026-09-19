@@ -43,8 +43,8 @@ export type Stat = {
 export const stats: Stat[] = [
   { value: "15+", label: "Years of Experience" },
   { value: "10K+", label: "Customer Interactions Handled" },
-  { value: "3", label: "Industries Served" },
-  { value: "4", label: "Languages Spoken" },
+  { value: "4", label: "Industries Served" },
+  { value: "5", label: "Languages Spoken" },
 ];
 
 /* -------------------------- PROFESSIONAL SUMMARY ------------------------ */
