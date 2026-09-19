@@ -323,10 +323,66 @@ export type Certification = {
   issuer: string;
   year: string;
   description: string;
-  image: string;
+  image?: string;
 };
 
 export const certifications: Certification[] = [
+  {
+    title: "Careers in Supply Chain and Operations",
+    issuer: "LinkedIn Learning, CPE Sponsors & QAS",
+    year: "Sep 2026",
+    description:
+      "Overview of supply chain and operations roles, key functions and the skills needed across planning, sourcing, logistics and delivery.",
+    image: "/images/careers-in-supply-chain-and-operations.svg",
+  },
+  {
+    title: "Career Essentials in Administrative Assistance",
+    issuer: "Microsoft and LinkedIn",
+    year: "Aug 2026",
+    description:
+      "Core administrative skills including scheduling, business communication, document handling and Microsoft 365 tools to support smooth office operations.",
+    image: "/images/career-essentials-in-administrative-assistance.svg",
+  },
+  {
+    title: "Oracle Aconex Associate",
+    issuer: "Oracle",
+    year: "Aug 2026",
+    description:
+      "Foundational knowledge of the Oracle Aconex platform for project collaboration, covering document management, correspondence tracking and workflows across project teams.",
+    image: "/images/oracle-aconex-associate.svg",
+  },
+  {
+    title: "Managing Logistics",
+    issuer: "LinkedIn Learning and Project Management Institute (PMI)",
+    year: "Aug 2026",
+    description:
+      "Fundamentals of logistics management, covering transportation, warehousing, inventory flow and coordination from supplier to customer.",
+    image: "/images/managing-logistics.svg",
+  },
+  {
+    title: "SAP ERP Essential Training",
+    issuer: "LinkedIn Learning",
+    year: "Aug 2026",
+    description:
+      "Introduction to SAP ERP and how core business processes such as procurement, sales and inventory connect within one system.",
+    image: "/images/sap-erp-essential-training.svg",
+  },
+  {
+    title: "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps) Cert Prep",
+    issuer: "LinkedIn Learning",
+    year: "Aug 2026",
+    description:
+      "Advanced Excel skills including complex formulas, data analysis and workbook management, in preparation for the Microsoft Office Specialist Expert exam.",
+    image: "/images/microsoft-office-specialist-excel-expert.svg",
+  },
+  {
+    title: "Customer Service: Creating Customer Value",
+    issuer: "LinkedIn Learning",
+    year: "Aug 2026",
+    description:
+      "Customer-focused service techniques, professional handling of enquiries and complaints, and building lasting customer relationships.",
+    image: "/images/customer-service-creating-customer-value.svg",
+  },
   {
     title: "Supply Chain Management Specialization",
     issuer: "Rutgers University (via Coursera)",

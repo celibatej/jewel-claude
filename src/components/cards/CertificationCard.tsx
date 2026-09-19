@@ -32,9 +32,11 @@ export function CertificationCard({
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
         {item.description}
       </p>
-      <div className="mt-auto">
-        <CertificateViewer src={item.image} title={item.title} />
-      </div>
+      {item.image && (
+        <div className="mt-auto">
+          <CertificateViewer src={item.image} title={item.title} />
+        </div>
+      )}
     </SpotlightCard>
   );
 }

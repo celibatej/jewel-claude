@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131">
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c7590"/>
+      <stop offset="100%" stop-color="#375a72"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background base with soft geometric framing -->
+  <rect width="1600" height="1131" fill="#f8fafb"/>
+  
+  <!-- Outer decorative borders mimicking LinkedIn Learning certificate format -->
+  <path d="M 0 0 L 1600 0 L 1600 180 L 1420 0 Z" fill="#9dbec5" opacity="0.35"/>
+  <path d="M 0 0 L 0 240 L 220 0 Z" fill="#88b1b8" opacity="0.4"/>
+  <path d="M 0 850 L 0 1131 L 320 1131 Z" fill="#9dbec5" opacity="0.4"/>
+  <path d="M 1200 1131 L 1600 1131 L 1600 820 Z" fill="#7ba6ae" opacity="0.35"/>
+
+  <!-- Inner crisp certificate card -->
+  <rect x="60" y="45" width="1480" height="1041" fill="#ffffff" rx="12" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.06))"/>
+  <rect x="75" y="60" width="1450" height="1011" fill="none" stroke="#e6eff0" stroke-width="1.5" rx="8"/>
+
+  <!-- Top Dual Branding: LinkedIn Learning + Microsoft -->
+  <g transform="translate(800, 160)" text-anchor="middle">
+    <!-- LinkedIn Learning (left side) -->
+    <g transform="translate(-180, 0)">
+      <text x="-48" y="0" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#0077b5">Linked</text>
+      <rect x="2" y="-36" width="44" height="42" rx="7" fill="#0077b5"/>
+      <text x="24" y="-5" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">in</text>
+      <text x="135" y="0" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="44" font-weight="400" fill="#0a66c2">Learning</text>
+    </g>
+
+    <!-- Microsoft (right side) -->
+    <g transform="translate(180, -8)">
+      <!-- 4-color Microsoft squares -->
+      <rect x="-95" y="-24" width="22" height="22" fill="#f25022"/>
+      <rect x="-69" y="-24" width="22" height="22" fill="#7fba00"/>
+      <rect x="-95" y="2" width="22" height="22" fill="#00a4ef"/>
+      <rect x="-69" y="2" width="22" height="22" fill="#ffb900"/>
+      <text x="-36" y="8" font-family="Liberation Sans, Segoe UI, Arial, sans-serif" font-size="42" font-weight="600" fill="#5e5e5e" text-anchor="start">Microsoft</text>
+    </g>
+  </g>
+
+  <!-- Certificate Title -->
+  <text x="800" y="325" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#18232c" text-anchor="middle" letter-spacing="0.5">
+    Career Essentials in Administrative
+  </text>
+  <text x="800" y="385" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#18232c" text-anchor="middle" letter-spacing="0.5">
+    Assistance by Microsoft and LinkedIn
+  </text>
+
+  <!-- Subtitle / Completion statement -->
+  <text x="800" y="455" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#475569" text-anchor="middle">
+    Learning Path completed by <tspan font-weight="700" fill="#0f172a">Jobaedul Islam Jewel</tspan>
+  </text>
+  <text x="800" y="495" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#64748b" text-anchor="middle">
+    Aug 03, 2026 at 11:23AM UTC • 7 hours 15 minutes
+  </text>
+
+  <!-- Top Skills Covered Section -->
+  <text x="800" y="575" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#1e293b" text-anchor="middle">
+    Top skills covered
+  </text>
+
+  <!-- Skill Badges -->
+  <g transform="translate(800, 630)">
+    <!-- Badge 1: Business Communications -->
+    <rect x="-480" y="-26" width="310" height="52" rx="26" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="-325" y="8" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#334155" text-anchor="middle">Business Communications</text>
+
+    <!-- Badge 2: Microsoft 365 -->
+    <rect x="-140" y="-26" width="200" height="52" rx="26" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="-40" y="8" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#334155" text-anchor="middle">Microsoft 365</text>
+
+    <!-- Badge 3: Administrative Assistance -->
+    <rect x="90" y="-26" width="320" height="52" rx="26" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="250" y="8" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#334155" text-anchor="middle">Administrative Assistance</text>
+  </g>
+
+  <!-- Signature Section -->
+  <g transform="translate(800, 775)">
+    <!-- Signature path -->
+    <path d="M -140 10 Q -100 -50 -70 15 T -30 -30 T 20 20 T 70 -20 T 130 5" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -110 -20 L 110 -15" fill="none" stroke="#1e293b" stroke-width="1.8" opacity="0.6"/>
+    <text x="0" y="55" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155" text-anchor="middle">
+      Shea Hanson, Head of Learning Content Strategy
+    </text>
+  </g>
+
+  <!-- Certificate ID Footer -->
+  <text x="800" y="885" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    Certificate ID: <tspan font-family="Courier, monospace" font-size="12" fill="#475569">f53f9f25371625d547a7f5cac9f2c2f543a11bb3dc9ed8519884fa7ee8db82bd</tspan>
+  </text>
+
+  <!-- Bottom Right: Learning Path Completion Badge -->
+  <g transform="translate(1360, 875)">
+    <circle cx="0" cy="0" r="72" fill="url(#badgeGrad)"/>
+    <circle cx="0" cy="0" r="66" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4,4"/>
+    <text x="0" y="-42" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2.5">LEARNING PATH</text>
+    <rect x="-24" y="-22" width="48" height="44" rx="8" fill="#ffffff"/>
+    <text x="0" y="10" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#0077b5" text-anchor="middle">in</text>
+    <text x="0" y="46" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">COMPLETION</text>
+  </g>
+</svg>

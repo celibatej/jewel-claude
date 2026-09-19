@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <defs>
+    <!-- Background radial glow -->
+    <radialGradient id="cardGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </radialGradient>
+    <!-- Top & Bottom shield wood-grain dark texture gradient -->
+    <linearGradient id="shieldDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c2826"/>
+      <stop offset="50%" stop-color="#342f2d"/>
+      <stop offset="100%" stop-color="#1f1c1b"/>
+    </linearGradient>
+    <!-- Central banner teal gradient -->
+    <linearGradient id="aconexTealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16596b"/>
+      <stop offset="50%" stop-color="#1b667a"/>
+      <stop offset="100%" stop-color="#145263"/>
+    </linearGradient>
+    <!-- Multicolor accent line: Ochre, Terra Cotta, Slate -->
+    <linearGradient id="multiAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c97d38"/>
+      <stop offset="25%" stop-color="#b86127"/>
+      <stop offset="45%" stop-color="#d43f2f"/>
+      <stop offset="55%" stop-color="#1f1c1b"/>
+      <stop offset="75%" stop-color="#6b868e"/>
+      <stop offset="100%" stop-color="#93a8af"/>
+    </linearGradient>
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Clean canvas background -->
+  <rect width="1200" height="1200" fill="url(#cardGlow)"/>
+
+  <!-- Subtle framing border -->
+  <rect x="40" y="40" width="1120" height="1120" rx="24" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Shield Badge Container with soft elevation -->
+  <g transform="translate(600, 570)" filter="url(#badgeShadow)">
+    
+    <!-- Top Part of the Hexagonal Shield -->
+    <polygon points="-380,-190 -340,-410 0,-490 340,-410 380,-190" fill="url(#shieldDarkGrad)"/>
+    
+    <!-- Bottom Part of the Hexagonal Shield -->
+    <polygon points="-300,190 -260,260 0,440 260,260 300,190" fill="url(#shieldDarkGrad)"/>
+
+    <!-- Subtle woodgrain contour rings on shield for realism -->
+    <path d="M -260,-390 Q 0,-450 260,-390" fill="none" stroke="#453e3a" stroke-width="3" opacity="0.6"/>
+    <path d="M -220,-340 Q 0,-400 220,-340" fill="none" stroke="#453e3a" stroke-width="2.5" opacity="0.5"/>
+    <path d="M -180,310 Q 0,410 180,310" fill="none" stroke="#453e3a" stroke-width="3" opacity="0.6"/>
+
+    <!-- ORACLE University Wordmark -->
+    <g transform="translate(0, -320)" text-anchor="middle">
+      <!-- ORACLE bold wordmark -->
+      <text x="0" y="0" font-family="Liberation Sans, Arial, sans-serif" font-size="68" font-weight="900" fill="#ffffff" letter-spacing="4">
+        ORACLE
+      </text>
+      <!-- University elegant script/sans -->
+      <text x="0" y="70" font-family="Liberation Sans, Georgia, sans-serif" font-size="46" font-weight="400" fill="#ffffff" letter-spacing="1">
+        University
+      </text>
+    </g>
+
+    <!-- Multicolor textured separator band -->
+    <rect x="-420" y="-190" width="840" height="28" fill="url(#multiAccent)"/>
+
+    <!-- Central Wide Teal Banner (Aconex Accredited Associate) -->
+    <!-- Tapered trapezoid banner -->
+    <polygon points="-420,-162 420,-162 350,190 -350,190" fill="url(#aconexTealGrad)"/>
+
+    <!-- Title on Teal Banner -->
+    <g transform="translate(0, -10)" text-anchor="middle">
+      <text x="0" y="10" font-family="Liberation Sans, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff" letter-spacing="0.5">
+        Aconex Accredited
+      </text>
+      <text x="0" y="95" font-family="Liberation Sans, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff" letter-spacing="0.5">
+        Associate
+      </text>
+    </g>
+  </g>
+
+  <!-- Official Accreditation & Verification Footer -->
+  <g transform="translate(600, 1100)" text-anchor="middle">
+    <text font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#334155" letter-spacing="1">
+      ORACLE UNIVERSITY OFFICIAL ACCREDITATION
+    </text>
+    <text y="24" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#64748b">
+      Issued to Jobaedul Islam Jewel • August 2026
+    </text>
+  </g>
+</svg>

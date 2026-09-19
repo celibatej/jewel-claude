@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#edf4f5"/>
+      <stop offset="100%" stop-color="#e3eeef"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c7590"/>
+      <stop offset="100%" stop-color="#375a72"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background base with soft geometric framing -->
+  <rect width="1600" height="1131" fill="#f8fafb"/>
+  
+  <!-- Outer decorative borders and polygons mimicking LinkedIn Learning certificate format -->
+  <path d="M 0 0 L 1600 0 L 1600 180 L 1420 0 Z" fill="#9dbec5" opacity="0.35"/>
+  <path d="M 0 0 L 0 240 L 220 0 Z" fill="#88b1b8" opacity="0.4"/>
+  <path d="M 0 850 L 0 1131 L 320 1131 Z" fill="#9dbec5" opacity="0.4"/>
+  <path d="M 1200 1131 L 1600 1131 L 1600 820 Z" fill="#7ba6ae" opacity="0.35"/>
+
+  <!-- Inner crisp certificate frame -->
+  <rect x="60" y="45" width="1480" height="1041" fill="#ffffff" rx="12" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.06))"/>
+  
+  <!-- Subtle inner margin line -->
+  <rect x="75" y="60" width="1450" height="1011" fill="none" stroke="#e6eff0" stroke-width="1.5" rx="8"/>
+
+  <!-- Top Brand: LinkedIn Learning -->
+  <g transform="translate(800, 160)" text-anchor="middle">
+    <!-- LinkedIn wordmark -->
+    <text x="-48" y="0" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#0077b5">Linked</text>
+    <!-- in icon box -->
+    <rect x="2" y="-36" width="44" height="42" rx="7" fill="#0077b5"/>
+    <text x="24" y="-5" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">in</text>
+    <text x="135" y="0" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="44" font-weight="400" fill="#0a66c2">Learning</text>
+  </g>
+
+  <!-- Certificate Title -->
+  <text x="800" y="315" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#18232c" text-anchor="middle" letter-spacing="0.5">
+    Careers in Supply Chain and Operations
+  </text>
+
+  <!-- Subtitle / Completion statement -->
+  <text x="800" y="375" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#475569" text-anchor="middle">
+    Course completed by <tspan font-weight="700" fill="#0f172a">Jobaedul Islam Jewel</tspan>
+  </text>
+  <text x="800" y="415" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#64748b" text-anchor="middle">
+    Sep 12, 2026 at 07:27PM UTC
+  </text>
+
+  <!-- Top Skills Covered Section -->
+  <text x="800" y="495" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#1e293b" text-anchor="middle">
+    Top skills covered
+  </text>
+
+  <!-- Skill Badges -->
+  <g transform="translate(800, 555)">
+    <!-- Badge 1: Supply Chain Management -->
+    <rect x="-380" y="-26" width="350" height="52" rx="26" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="-205" y="8" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#334155" text-anchor="middle">Supply Chain Management</text>
+
+    <!-- Badge 2: Career Path Planning -->
+    <rect x="30" y="-26" width="320" height="52" rx="26" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="190" y="8" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#334155" text-anchor="middle">Career Path Planning</text>
+  </g>
+
+  <!-- Signature Section -->
+  <g transform="translate(800, 690)">
+    <!-- Elegant simulated signature path -->
+    <path d="M -140 10 Q -100 -50 -70 15 T -30 -30 T 20 20 T 70 -20 T 130 5" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -110 -20 L 110 -15" fill="none" stroke="#1e293b" stroke-width="1.8" opacity="0.6"/>
+    <text x="0" y="55" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155" text-anchor="middle">
+      Shea Hanson, Head of Learning Content Strategy
+    </text>
+  </g>
+
+  <!-- Bottom Details & Accreditation Columns -->
+  <!-- Left Side: CPE / QAS Accreditation Logo & Text -->
+  <g transform="translate(140, 810)">
+    <!-- CPE / QAS emblem -->
+    <g transform="translate(50, 40)">
+      <rect x="-45" y="-35" width="90" height="70" fill="none" stroke="#003366" stroke-width="3" rx="4"/>
+      <path d="M -40 -15 L 40 -15" stroke="#003366" stroke-width="2"/>
+      <text x="0" y="-20" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#003366" text-anchor="middle">NATIONAL REGISTRY OF</text>
+      <text x="0" y="10" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="28" font-weight="900" fill="#003366" text-anchor="middle">CPE</text>
+      <text x="0" y="26" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#003366" text-anchor="middle">SPONSORS</text>
+      <!-- QAS text below -->
+      <text x="0" y="55" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="24" font-weight="900" fill="#0077b5" text-anchor="middle" letter-spacing="2">QAS</text>
+      <text x="0" y="70" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="8" font-weight="600" fill="#475569" text-anchor="middle">QUALITY ASSURANCE SERVICE</text>
+    </g>
+
+    <!-- CPE Legal Text -->
+    <g transform="translate(135, 15)">
+      <text font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#475569" line-height="1.4">
+        <tspan x="0" dy="0" font-weight="600">Instructional Delivery Method: QAS Self Study</tspan>
+        <tspan x="0" dy="16">In accordance with the standards of the National Registry of CPE Sponsors,</tspan>
+        <tspan x="0" dy="14">CPE credits have been granted based on a 50-minute hour.</tspan>
+        <tspan x="0" dy="14">LinkedIn is registered with the National Association of State Boards of</tspan>
+        <tspan x="0" dy="14">Accountancy (NASBA) as a sponsor of continuing professional education on</tspan>
+        <tspan x="0" dy="14">the National Registry of CPE Sponsors. State boards of accountancy have</tspan>
+        <tspan x="0" dy="14">final authority on the acceptance of individual courses for CPE credit.</tspan>
+        <tspan x="0" dy="14">Complaints regarding registered sponsors may be submitted to the National</tspan>
+        <tspan x="0" dy="14">Registry of CPE Sponsors through its web site: www.nasbaregistry.org</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Details Column: Registry info & Cert ID -->
+  <g transform="translate(760, 825)">
+    <text font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#334155">
+      <tspan x="0" dy="0"><tspan font-weight="600">Field of Study:</tspan> Production</tspan>
+      <tspan x="0" dy="18"><tspan font-weight="600">Program:</tspan> National Association of State Boards of Accountancy (NASBA)</tspan>
+      <tspan x="0" dy="18"><tspan font-weight="600">Registry ID:</tspan> #140940</tspan>
+      <tspan x="0" dy="18"><tspan font-weight="600">Continuing Professional Education Credit (CPE):</tspan> 1.80</tspan>
+      <tspan x="0" dy="18"><tspan font-weight="600">Certificate ID:</tspan></tspan>
+      <tspan x="0" dy="16" font-family="Courier, monospace" font-size="11" fill="#475569">e8047731f2f26c7edf32aca718c74696e847f61412debe306201feb2639cfff4</tspan>
+    </text>
+  </g>
+
+  <!-- Bottom Right: Official Course Completion Badge -->
+  <g transform="translate(1330, 915)">
+    <!-- Scalloped rosette circular badge -->
+    <circle cx="0" cy="0" r="72" fill="url(#badgeGrad)"/>
+    <circle cx="0" cy="0" r="66" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4,4"/>
+    
+    <!-- Curved/banner text effect -->
+    <text x="0" y="-42" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="3">★ COURSE ★</text>
+    
+    <!-- Center LinkedIn in box -->
+    <rect x="-24" y="-22" width="48" height="44" rx="8" fill="#ffffff"/>
+    <text x="0" y="10" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#0077b5" text-anchor="middle">in</text>
+    
+    <text x="0" y="46" font-family="Liberation Sans, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">COMPLETION</text>
+  </g>
+</svg>
