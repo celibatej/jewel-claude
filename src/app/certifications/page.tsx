@@ -23,7 +23,7 @@ export default function CertificationsPage() {
       <PageHeader
         eyebrow="Credentials"
         title="Certifications"
-        description="Formal training completed during my career break to sharpen and modernise what I already know from the field."
+        description="Formal training completed recently to sharpen and modernise what I already know from the field."
       />
 
       <Section>

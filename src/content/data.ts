@@ -12,6 +12,7 @@ import {
   Headset,
   Settings2,
   Truck,
+  FileText,
   ShieldCheck,
   Handshake,
   ClipboardCheck,
@@ -209,6 +210,11 @@ export const highlights: Highlight[] = [
     title: "Logistics & Fleet Management",
     icon: Truck,
     body: "Scheduling and tracking a large corporate vehicle fleet across Jeddah — maximising utilisation, coordinating maintenance, and dispatching drivers dynamically based on real-time demand.",
+  },
+  {
+    title: "Administrative Support & Document Control",
+    icon: FileText,
+    body: "Managing calendars, correspondence, filing systems and contract, insurance and registration records, backed by Oracle Aconex and administrative assistance certifications.",
   },
   {
     title: "KYC & AML Compliance",

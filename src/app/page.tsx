@@ -160,7 +160,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Credentials"
               title="Certifications"
-              description="Formal training completed during my career break to sharpen and modernise what I already know from the field."
+              description="Formal training completed recently to sharpen and modernise what I already know from the field."
             />
             <div className="hidden shrink-0 pb-2 sm:block">
               <ViewAll href="/certifications" label="All certifications" />
@@ -185,7 +185,7 @@ export default function HomePage() {
       <Section>
         <CTA
           title="Looking for someone who brings both field experience and fresh operational thinking?"
-          body="I am open to remote roles, KSA opportunities, and freelance engagements. Let’s talk."
+          body="I am open to KSA opportunities, remote roles and freelance engagements. Let's talk."
         />
       </Section>
     </>
