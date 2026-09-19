@@ -67,7 +67,7 @@ export const about = {
   paragraphs: [
     "My career has covered remittance banking, automotive fleet management, financial services compliance and office administration. What connects them is the same underlying work: keeping records accurate, keeping customers calm, keeping processes tight, and flagging problems before they become crises. I have coordinated vehicle fleets, scheduled and supervised drivers, managed contracts, insurance and registration documents, supported executive calendars and correspondence, enforced KYC and AML protocols, and resolved high-stakes transaction disputes.",
     "I work best in roles where reliability is the standard, not the exception. I am the person who reads the SOP before asking questions, keeps the maintenance log and document files updated without being reminded, and de-escalates a frustrated customer before they become a complaint on record. I am comfortable owning a process end-to-end and equally comfortable supporting a larger team where my contribution is one well-executed piece of a bigger operation.",
-    "I am open to roles across Saudi Arabia. I have recently completed formal certifications in supply chain management, inventory management, SAP, Oracle Aconex, administrative assistance and AI tools, because I believe that experience without continued learning starts to quietly go stale.",
+    "I am open to roles across the KSA market, Bangladesh and beyond. I have recently completed formal certifications in supply chain management, inventory management, SAP, Oracle Aconex, administrative assistance and AI tools, because I believe that experience without continued learning starts to quietly go stale.",
   ],
   // Short, human values rather than buzzwords.
   values: [
