@@ -55,8 +55,8 @@ export function personJsonLd() {
     image: `${siteConfig.url}/opengraph-image`,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Chattogram",
-      addressCountry: "BD",
+      addressLocality: "Riyadh",
+      addressCountry: "SA",
     },
     // Links the profile to verified social/freelance accounts.
     sameAs: socialLinks

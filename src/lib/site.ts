@@ -12,16 +12,16 @@ export const siteConfig = {
   title: "Operations, Logistics & Customer Support Specialist",
   url: "https://jobisjewel.vercel.app",
   locale: "en_US",
-  location: "Chattogram, Bangladesh",
-  address: "City Gate, Chattogram, Bangladesh",
+  location: "Riyadh, Saudi Arabia",
+  address: "Riyadh, Saudi Arabia",
   experienceYears: "15+",
 
   // A concise description used for SEO and previews.
   description:
-    "Jobaedul Islam Jewel is an Operations, Logistics & Customer Support Specialist with 15+ years of experience across the Saudi Arabian market — in international remittance, fleet coordination and banking — now supporting teams remotely from Bangladesh.",
+    "Jobaedul Islam Jewel is an Operations, Logistics & Customer Support Specialist with 15+ years of experience across the Saudi Arabian market — in international remittance, fleet coordination and banking.",
 
   email: "jobisjewel@gmail.com",
-  phone: "+880 1886 666 988",
+  phone: "+966 58 010 8464",
 
   // Assets live in /public. The Open Graph / favicon images are generated
   // automatically (see src/app/opengraph-image.tsx, icon.svg, apple-icon.tsx).
