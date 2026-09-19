@@ -28,9 +28,9 @@ import {
 export const hero = {
   // A personal brand statement — confident, specific, not a cliché.
   statement:
-    "I keep operations running quietly and reliably — so teams stay coordinated, customers stay heard, and nothing falls through the cracks.",
+    "I keep fleets, documents and customers organised, so teams stay coordinated and nothing falls through the cracks.",
   intro:
-    "For more than 15 years I have worked at the intersection of operations, logistics, and customer service — across financial services, fleet management, and remittance banking in the KSA market. My work is the kind people notice only when it is missing: fleets that stay coordinated, compliance records that hold up under audit, and customers who feel genuinely resolved rather than just closed. I bring that same reliability whether the role is based in the KSA market, Bangladesh, or fully remote.",
+    "I have more than 15 years of experience in administration, fleet and logistics coordination and customer service in the KSA market, including financial services and remittance. My work covers vehicle scheduling, driver dispatch, maintenance tracking, vendor coordination and handling of contracts, insurance and registration records, along with calendar management, correspondence and filing as an executive assistant. I serve customers and corporate clients in English, Arabic and Hindi/Urdu. I also hold certifications in Oracle Aconex, administrative assistance, SAP, inventory management and supply chain. I bring the same reliability to any administrative, document control, fleet or logistics role in Saudi Arabia.",
 };
 
 /* --------------------------- CAREER HIGHLIGHTS -------------------------- */

@@ -9,7 +9,7 @@
 export const siteConfig = {
   name: "Jobaedul Islam Jewel",
   shortName: "Jewel",
-  title: "Operations, Logistics & Customer Support Specialist",
+  title: "Fleet & Logistics Coordinator | Customer Service & Sales",
   url: "https://jobisjewel.vercel.app",
   locale: "en_US",
   location: "Riyadh, Saudi Arabia",
@@ -18,7 +18,7 @@ export const siteConfig = {
 
   // A concise description used for SEO and previews.
   description:
-    "Jobaedul Islam Jewel is an Operations, Logistics & Customer Support Specialist with 15+ years of experience across the Saudi Arabian market — in international remittance, fleet coordination and banking.",
+    "Jobaedul Islam Jewel is a Fleet & Logistics Coordinator | Customer Service & Sales professional with 15+ years of experience across the Saudi Arabian market — in international remittance, fleet coordination and banking.",
 
   email: "jobisjewel@gmail.com",
   phone: "+966 58 010 8464",
