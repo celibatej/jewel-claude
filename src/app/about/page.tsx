@@ -13,7 +13,7 @@ import { CTA } from "@/components/sections/CTA";
 export const metadata: Metadata = buildMetadata({
   title: "About",
   description:
-    "Learn about Jobaedul Islam Jewel — an operations, logistics and customer support specialist who keeps the day-to-day of a business calm, organised and reliable.",
+    "Learn about Jobaedul Islam Jewel — a fleet, logistics, administration and customer service professional who keeps the day-to-day of a business calm, organised and reliable.",
   path: "/about",
 });
 
